@@ -16,9 +16,7 @@ By flashing this kernel, **YOU** are choosing to make these modifications. If so
 
 # Installation instructions: 
 
-Follow the steps for GKI:  
-[Installation](https://kernelsu.org/guide/installation.html)
-
+Flash AnyKernel3 zip provided
 ---
 
 # Features
