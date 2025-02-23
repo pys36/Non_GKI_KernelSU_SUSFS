@@ -1,10 +1,23 @@
 name: Add your device
-description: It will trigger a GitHub Actions that build for your devices
+description: It will trigger a GitHub Actions that builds for your devices
 title: '[New Devices]'
 body:
-  - type: textarea
-    id: description
+  # Field to capture the device's codename.
+  - type: input
+    id: device_codename
     attributes:
-      label: "test"
+      label: "Device Codename"
+      description: "Enter your device's codename (e.g., 'earth'). This is a required field."
+      placeholder: "Enter device codename"
+    validations:
+      required: true
+
+  # Field to capture the URL for the device's kernel sources.
+  - type: input
+    id: kernel_sources_url
+    attributes:
+      label: "Device's kernel sources"
+      description: "Enter the URL to the kernel sources for your device (e.g., 'https://github.com/user/repo')."
+      placeholder: "https://github.com/..."
     validations:
       required: true
