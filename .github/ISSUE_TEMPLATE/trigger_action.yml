@@ -1,8 +1,8 @@
 name: Add your device
 description: It will trigger a GitHub Actions that builds for your devices
 title: '[New Devices]'
+label: "Device Name"
 body:
-  # Field to capture the device's codename.
   - type: input
     id: device_codename
     attributes:
@@ -12,12 +12,20 @@ body:
     validations:
       required: true
 
-  # Field to capture the URL for the device's kernel sources.
   - type: input
-    id: kernel_sources_url
+    id: kernel_sources
     attributes:
-      label: "Device's kernel sources"
+      label: "Device kernel sources"
       description: "Enter the URL to the kernel sources for your device (e.g., 'https://github.com/user/repo')."
       placeholder: "https://github.com/..."
+    validations:
+      required: true
+
+  - type: input
+    id: telegram_username
+    attributes:
+      label: "Telegram Username"
+      description: "Generated flashable will send to your Telegram by a bot"
+      placeholder: "Eg. ID: 7688567205"
     validations:
       required: true
