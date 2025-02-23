@@ -1,27 +1,10 @@
-name: Device request
-description: "Use this template to build for a new devices"
-labels: 
-  - action-trigger
-assignees: []
-
+name: Add your device
+description: It will trigger a GitHub Actions that build for your devices
+title: '[New Devices]'
 body:
-  - type: markdown
+  - type: textarea
+    id: description
     attributes:
-      value: test
-  - type: input
-    id: inputParameter
-    attributes:
-      label: "Device's kernel source"
-      description: "Paste the link here!"
-      placeholder: "test"
-      required: true
-  - type: dropdown
-    id: actionType
-    attributes:
-      label: "Action Type"
-      description: "Select the type of action to trigger."
-      options:
-        - "build"
-        - "test"
-        - "deploy"
+      label: "test"
+    validations:
       required: true
