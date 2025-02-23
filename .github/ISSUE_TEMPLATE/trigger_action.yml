@@ -1,7 +1,6 @@
 name: Add your device
 description: It will trigger a GitHub Actions that builds for your devices
 title: '[New Devices]'
-label: "Device Name"
 body:
   - type: input
     id: device_codename
